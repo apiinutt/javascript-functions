@@ -1,24 +1,11 @@
 // Start coding here
-const add = (a,b) => {
-        return a+b;
-}
-const subtract = (a,b) => {
-    return a-b;
-}
-const multiply = (a,b) => {
-    return a*b;
-}
-const divide = (a,b) => {
-    return a/b;
-}
-
 let calculator = {
-    add: add(),
-    subtract: subtract(),
-    multiply: multiply(),
-    divide: divide(),
+    add: (a,b) => a+b,
+    subtract: (a,b) => a-b,
+    multiply: (a,b) => a*b,
+    divide: (a,b) => a/b,
 };
 
-let addResult = add(10,20);
-let addDivide = divide(3000,10);
+let addResult = calculator.add(10,20);
+let addDivide = calculator.divide(3000,10);
 console.log(addResult,addDivide)
